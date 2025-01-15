@@ -8,8 +8,9 @@ char upper_letters[] = "ABCDEFGHIJKLMNOQPRSTUYWVZX";
 char symbols[] = "!@#$^&*_?";
 
 int main(int argc, char **argv) {
-  if (argc == 0) {
+  if (argc != 2) {
     printf("Please provide a password lenght as argument.");
+    return 1;
   }
 
   int password_lenght;
